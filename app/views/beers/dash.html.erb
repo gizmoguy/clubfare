@@ -12,11 +12,11 @@
 			</article>
 			<div class="price 500ml">
 		  		500ml<br>
-		  		<%= number_to_currency(((beer.price * Beer.markup("tap"))/(beer.format.size/0.5)).round(1), precision: 2) %>
+				<%= beer_price(beer, 0.5) %>
 			</div>
 			<div class="price 250ml">
 		  		250ml
-		  		<%= number_to_currency(((beer.price * Beer.markup("tap"))/(beer.format.size/0.25)).round(1), precision: 2) %>
+				<%= beer_price(beer, 0.25) %>
 			</div> 
 	  	</li>
 		<% end %>
