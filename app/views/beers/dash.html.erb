@@ -3,19 +3,12 @@
 		<% @beers.each do |beer| %>
 		<li class="full">
 			<article class="cf">
-				<% case beer.location.status %>
-				<% when "SERVING" %>
-					<b class="pouring">Pouring</b>
-				<% when "LOW" %>
-					<b class="low">Low</b>
-				<% when "NEXT" %>
-					<b class="next">On Soon</b>
-				<% end %>
-					<h2><%= beer.brewer.name %> <i><%= beer.name %></i></h2>
-		  			<p>
-						<%= beer.style.name %><br>
-						<%= beer.brewer.location %> &mdash; ABV <%= number_to_percentage(beer.abv, precision: 1) %>
-		  			</p>
+				<%= content_tag(:b, t(beer.location.status.to_sym), class: beer.location.status.downcase) %>
+				<h2><%= beer.brewer.name %> <i><%= beer.name %></i></h2>
+		  		<p>
+					<%= beer.style.name %><br>
+					<%= beer.brewer.location %> &mdash; ABV <%= number_to_percentage(beer.abv, precision: 1) %>
+		  		</p>
 			</article>
 			<div class="price 500ml">
 		  		500ml<br>
