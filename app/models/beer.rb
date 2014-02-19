@@ -6,6 +6,8 @@ class Beer < ActiveRecord::Base
 	
 	validates :name, length: { maximum: 254 }
 
+	Wastage = 0.05
+
 	def self.markup(method)
 		if method == "tap"
 			return 2.811
@@ -14,13 +16,9 @@ class Beer < ActiveRecord::Base
 		end
 	end
 
-	def self.wastage
-		0.05
-	end
-
 	def self.pricefor(id, serving, method)
 		volume = self.joins(:format).select("formats.size").find(id).size
-		(self.find(id).price) / (volume - (volume * self.wastage)) / 1000 * serving * self.markup(method)
+		(self.find(id).price) / (volume - (volume * Wastage)) / 1000 * serving * self.markup(method)
 	end
 
 	def self.ontap
