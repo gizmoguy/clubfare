@@ -22,7 +22,7 @@ class Beer < ActiveRecord::Base
 	end
 
 	def self.ontap
-		@beers = self.joins(:location,:brewer).where(locations: { status: ['LOW','SERVING'] }).select("beers.id, brewers.name AS brewer_name, beers.name, beers.price, locations.name AS currently, 2.811 AS tapmarkup, 2 AS offmarkup")
+		self.joins(:location).where(locations: { status: ['LOW','SERVING'] }).includes(:brewer)
 	end
 
 end
