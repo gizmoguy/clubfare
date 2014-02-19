@@ -47,14 +47,14 @@ class BeersController < ApplicationController
 		@beers = Beer.joins(:location).where(locations: { status: ['NEXT','LOW','SERVING'] }).order(:location_id)
 	end
 
-	private
+private
 	
-		def get_beer
-			@beer = Beer.find(params[:id])
-		end
+	def get_beer
+		@beer = Beer.find(params[:id])
+	end
 
-		def beer_params
-			params.require(:beer).permit(:name, :brewer_id, :format_id, :price, :style_id, :abv, :note, :location_id)
-		end
+	def beer_params
+		params.require(:beer).permit(:name, :brewer_id, :format_id, :price, :style_id, :abv, :note, :location_id)
+	end
 
 end
