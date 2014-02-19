@@ -16,9 +16,9 @@ class Beer < ActiveRecord::Base
 		end
 	end
 
-	def self.pricefor(id, serving, method)
-		volume = self.joins(:format).select("formats.size").find(id).size
-		(self.find(id).price) / (volume - (volume * Wastage)) / 1000 * serving * self.markup(method)
+	def pricefor(serving, method)
+		volume = self.format.size
+		(self.price) / (volume - (volume * Wastage)) / 1000 * serving * self.class.markup(method)
 	end
 
 	def self.ontap
