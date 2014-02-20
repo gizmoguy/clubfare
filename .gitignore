@@ -15,10 +15,6 @@
 /log/*.log
 /tmp
 
-# Ignore deployment tree
-/shared
-/releases
-
 # Ignore unneeded or insecure files
 database.yml
 seeds.rb
@@ -29,4 +25,3 @@ doc/
 .DS_Store
 .idea
 .secret
-current
