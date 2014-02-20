@@ -67,8 +67,6 @@ body {
 	
 }
 
-
-
 #beer-list article {
 	display: block;
 	float: left;
@@ -93,7 +91,7 @@ body {
 	font-size: 10px;
 }
 
-#beer-list article b.pouring {
+#beer-list article b.serving {
 	background-color: green;
 	font-size: 10px;
 }
