@@ -88,21 +88,21 @@ body {
 
 #beer-list article b.low {
 	background-color: red;
-	background-image: url(/assets/icons/low.png);
+	background-image: url(<%= asset_path 'icons/low.png' %>);
 	background-position: top;
 	font-size: 10px;
 }
 
 #beer-list article b.serving {
 	background-color: green;
-	background-image: url(/assets/icons/serving.png);
+	background-image: url(<%= asset_path 'icons/serving.png' %>);
 	background-position: top;
 	font-size: 10px;
 }
 
 #beer-list article b.next {
 	background-color: gray;
-	background-image: url(/assets/icons/next.png);
+	background-image: url(<%= asset_path 'icons/next.png' %>);
 	background-position: top;
 	font-size: 10px;
 }
