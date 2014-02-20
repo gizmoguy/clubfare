@@ -11,23 +11,19 @@ class Beer < ActiveRecord::Base
 	TapMarkup = 2.811
 	OffLicenseMarkup = 2
 
-	class <<self
-		def markup(method)
-			if method == "tap"
-				return TapMarkup
-			else
-				return OffLicenseMarkup
-			end
-		end
+	Markups = { tap: 2.811, off: 2 }.tap { |m| m.default = m[:off] }
 
+	def pricefor(serving_size, method)
+		available_beer = self.format.size - (self.format.size * Wastage)
+		price = ( (self.price * Markups[method] ) / ( available_beer / serving_size) ).round(1)
+	end
+
+	class <<self
+		
 		def ontap
 			self.joins(:location).where(locations: { status: ['LOW','SERVING'] }).includes(:brewer)
 		end
-	
-		def pricefor(serving, method)
-			volume = self.format.size
-			(self.price) / (volume - (volume * Wastage)) / 1000 * serving * self.class.markup(method)
-		end
+
 	end
 
 end

@@ -42,12 +42,12 @@
 
 <p>
   <strong>Pricing: </strong>
-  <p><strong>500ml : <%= beer_price(@beer, 0.5, "tap") %></strong></p>
-  <p><strong>250ml : <%=  beer_price(@beer, 0.25, "tap") %></strong></p>
-  <p><strong>1125ml : <%= beer_price(@beer, 1.125, "off") %></strong></p>
-  <p><strong>1500ml : <%= beer_price(@beer, 1.500, "off") %></strong></p>
-  <p><strong>2000ml : <%= beer_price(@beer, 2.000, "off") %></strong></p>
-  <p><strong>3000ml : <%= beer_price(@beer, 3.000, "off") %></strong></p>
+  <p><strong>500ml : <%= beer_price(@beer, 0.5, :tap) %></strong></p>
+  <p><strong>250ml : <%=  beer_price(@beer, 0.25, :tap) %></strong></p>
+  <p><strong>1125ml : <%= beer_price(@beer, 1.125, :off) %></strong></p>
+  <p><strong>1500ml : <%= beer_price(@beer, 1.500, :off) %></strong></p>
+  <p><strong>2000ml : <%= beer_price(@beer, 2.000, :off) %></strong></p>
+  <p><strong>3000ml : <%= beer_price(@beer, 3.000, :off) %></strong></p>
 </p>
 
 <%= link_to 'Edit', edit_beer_path(@beer) %> |
