@@ -3,7 +3,7 @@
 		<% @beers.each do |beer| %>
 		<li class="full">
 			<article class="cf">
-				<%= content_tag(:b, t(beer.location.status.to_sym), class: beer.location.status.downcase) %>
+				<%= content_tag(:b, '', class: beer.location.status.downcase) %>
 				<h2><%= beer.brewer.name %> <i><%= beer.name %></i></h2>
 		  		<p>
 					<%= beer.style.name %><br>
