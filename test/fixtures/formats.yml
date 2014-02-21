@@ -1,0 +1,37 @@
+---
+formats_001:
+  id: 1
+  name: 50L Keg
+  size: 50
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+formats_002:
+  id: 2
+  name: 30L Keg
+  size: 30
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+formats_003:
+  id: 3
+  name: 20L Keg
+  size: 20
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+formats_004:
+  id: 4
+  name: 19L Keg
+  size: 19
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+formats_005:
+  id: 5
+  name: 20L Bag
+  size: 20
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+formats_006:
+  id: 6
+  name: 36L Firkin
+  size: 36
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z

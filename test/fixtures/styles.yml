@@ -1,0 +1,731 @@
+---
+styles_001:
+  id: 1
+  name: Altbier
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_002:
+  id: 2
+  name: American Adjunct Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_003:
+  id: 3
+  name: American Amber / Red Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_004:
+  id: 4
+  name: American Amber / Red Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_005:
+  id: 5
+  name: American Barleywine
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_006:
+  id: 6
+  name: American Blonde Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_007:
+  id: 7
+  name: American Brown Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_008:
+  id: 8
+  name: American IPA
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_009:
+  id: 9
+  name: American Imperial / Double Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_010:
+  id: 10
+  name: American Light Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_011:
+  id: 11
+  name: American Pale Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_012:
+  id: 12
+  name: American Pale Wheat Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_013:
+  id: 13
+  name: American Porter
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_014:
+  id: 14
+  name: American Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_015:
+  id: 15
+  name: American Strong Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_016:
+  id: 16
+  name: American Wild Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_017:
+  id: 17
+  name: Applewine
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_018:
+  id: 18
+  name: Australian Pale Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_019:
+  id: 19
+  name: Australian Sparkling Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_020:
+  id: 20
+  name: Baltic Porter
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_021:
+  id: 21
+  name: Belgian Blonde / Golden
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_022:
+  id: 22
+  name: 'Belgian Brown Ale '
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_023:
+  id: 23
+  name: Belgian Dubbel
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_024:
+  id: 24
+  name: Belgian IPA
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_025:
+  id: 25
+  name: Belgian Pale Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_026:
+  id: 26
+  name: Belgian Quad
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_027:
+  id: 27
+  name: Belgian Strong Dark Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_028:
+  id: 28
+  name: Belgian Strong Pale Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_029:
+  id: 29
+  name: Belgian Tripel
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_030:
+  id: 30
+  name: Berliner Weisse
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_031:
+  id: 31
+  name: Biere de Champagne / Biere Brut
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_032:
+  id: 32
+  name: Bierede Garde
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_033:
+  id: 33
+  name: Black and Tan
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_034:
+  id: 34
+  name: Black IPA / Cascadian Dark Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_035:
+  id: 35
+  name: Black Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_036:
+  id: 36
+  name: Blonde Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_037:
+  id: 37
+  name: Blonde Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_038:
+  id: 38
+  name: Bock
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_039:
+  id: 39
+  name: Braggot
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_040:
+  id: 40
+  name: Burton Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_041:
+  id: 41
+  name: California Common
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_042:
+  id: 42
+  name: Canadian Adjunct Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_043:
+  id: 43
+  name: Canadian Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_044:
+  id: 44
+  name: Chili Beer
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_045:
+  id: 45
+  name: Cider
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_046:
+  id: 46
+  name: Cream Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_047:
+  id: 47
+  name: Cream Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_048:
+  id: 48
+  name: Cyser
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_049:
+  id: 49
+  name: Czech Pilsener
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_050:
+  id: 50
+  name: Dampfbier
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_051:
+  id: 51
+  name: Dark Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_052:
+  id: 52
+  name: 'Doppelbock '
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_053:
+  id: 53
+  name: Dortmunder / Export Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_054:
+  id: 54
+  name: Dunkel Munich Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_055:
+  id: 55
+  name: Dunkelweizen
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_056:
+  id: 56
+  name: Eisbock
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_057:
+  id: 57
+  name: English Barleywine
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_058:
+  id: 58
+  name: English Bitter
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_059:
+  id: 59
+  name: English Brown Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_060:
+  id: 60
+  name: English IPA
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_061:
+  id: 61
+  name: English Mild Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_062:
+  id: 62
+  name: English Pale Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_063:
+  id: 63
+  name: English Porter
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_064:
+  id: 64
+  name: English Strong Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_065:
+  id: 65
+  name: Euro Dark Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_066:
+  id: 66
+  name: Euro Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_067:
+  id: 67
+  name: Extra Special/Strong Bitter
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_068:
+  id: 68
+  name: Faro
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_069:
+  id: 69
+  name: Flanders Oud Bruin
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_070:
+  id: 70
+  name: Flanders Red Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_071:
+  id: 71
+  name: Foreign / Export Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_072:
+  id: 72
+  name: Fruit Beer
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_073:
+  id: 73
+  name: German Pilsner
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_074:
+  id: 74
+  name: Ginger Beer
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_075:
+  id: 75
+  name: Gluten-Free
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_076:
+  id: 76
+  name: Golden Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_077:
+  id: 77
+  name: Golden Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_078:
+  id: 78
+  name: Gose
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_079:
+  id: 79
+  name: Gruit / Ancient Herbed Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_080:
+  id: 80
+  name: Gueuze
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_081:
+  id: 81
+  name: Happoshu
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_082:
+  id: 82
+  name: Harvest Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_083:
+  id: 83
+  name: Hefeweizen
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_084:
+  id: 84
+  name: Helles Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_085:
+  id: 85
+  name: Herbed/Spiced Beer
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_086:
+  id: 86
+  name: Imperial / Double Black IPA
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_087:
+  id: 87
+  name: Imperial / Double Brown Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_088:
+  id: 88
+  name: Imperial / Double IPA
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_089:
+  id: 89
+  name: Imperial / Double Pilsner
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_090:
+  id: 90
+  name: Imperial / Double Porter
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_091:
+  id: 91
+  name: Imperial / Double Red Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_092:
+  id: 92
+  name: Imperial Oatmeal Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_093:
+  id: 93
+  name: Imperial Pale Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_094:
+  id: 94
+  name: Irish Dry Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_095:
+  id: 95
+  name: Irish Red Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_096:
+  id: 96
+  name: Japanese Rice Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_097:
+  id: 97
+  name: Kellerbier / Zwickelbier
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_098:
+  id: 98
+  name: 'Kristallweizen '
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_099:
+  id: 99
+  name: Kvass
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_100:
+  id: 100
+  name: Kolsch
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_101:
+  id: 101
+  name: Lambic
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_102:
+  id: 102
+  name: Maibock/Helles Bock
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_103:
+  id: 103
+  name: Malt Beer
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_104:
+  id: 104
+  name: 'Malt Liquor '
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_105:
+  id: 105
+  name: Mead
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_106:
+  id: 106
+  name: Melomel
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_107:
+  id: 107
+  name: Milk / Sweet Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_108:
+  id: 108
+  name: New Zealand IPA
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_109:
+  id: 109
+  name: New Zealand Pilsner
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_110:
+  id: 110
+  name: New Zealand Pale Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_111:
+  id: 111
+  name: Non-Alcoholic
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_112:
+  id: 112
+  name: Oatmeal Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_113:
+  id: 113
+  name: Oktoberfest/Marzen
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_114:
+  id: 114
+  name: Old Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_115:
+  id: 115
+  name: Other
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_116:
+  id: 116
+  name: Oyster Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_117:
+  id: 117
+  name: Pale Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_118:
+  id: 118
+  name: Patersbier
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_119:
+  id: 119
+  name: Perry
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_120:
+  id: 120
+  name: Pilsner
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_121:
+  id: 121
+  name: Porter
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_122:
+  id: 122
+  name: Pumpkin / Yam Beer
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_123:
+  id: 123
+  name: Pyment
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_124:
+  id: 124
+  name: Radler
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_125:
+  id: 125
+  name: Rauchbier
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_126:
+  id: 126
+  name: Roggenbier
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_127:
+  id: 127
+  name: Root Beer
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_128:
+  id: 128
+  name: Russian Imperial Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_129:
+  id: 129
+  name: Rye Beer
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_130:
+  id: 130
+  name: Sahti
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_131:
+  id: 131
+  name: Saison / Farmhouse Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_132:
+  id: 132
+  name: Schwarzbier
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_133:
+  id: 133
+  name: Scotch Ale / Wee Heavy
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_134:
+  id: 134
+  name: Scottish Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_135:
+  id: 135
+  name: Scottish Export Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_136:
+  id: 136
+  name: Smoked Beer
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_137:
+  id: 137
+  name: Sour Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_138:
+  id: 138
+  name: Speciality Grain
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_139:
+  id: 139
+  name: Stout
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_140:
+  id: 140
+  name: Vienna Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_141:
+  id: 141
+  name: Weizenbock
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_142:
+  id: 142
+  name: Wheat Wine
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_143:
+  id: 143
+  name: Winter Ale
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_144:
+  id: 144
+  name: Winter Lager
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_145:
+  id: 145
+  name: Winter Warmer
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+styles_146:
+  id: 146
+  name: Witbier
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z

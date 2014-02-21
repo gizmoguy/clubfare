@@ -1,0 +1,75 @@
+---
+beers_001:
+  id: 1
+  name: Pale Ale
+  brewer_id: 1
+  format_id: 1
+  price: 320.0
+  style_id: 2
+  abv: 5.6
+  note: Classic NZ version of a crisp, hoppy, refreshing American Pale Ale. Plenty
+    of citrus notes for the hopheads but not too threatening for the beerginner.
+  location_id: 7
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+beers_002:
+  id: 2
+  name: Pale Ale
+  brewer_id: 2
+  format_id: 1
+  price: 320.0
+  style_id: 2
+  abv: 5.0
+  note: A more malt influenced example of a pale ale.
+  location_id: 6
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+beers_003:
+  id: 3
+  name: Citradel
+  brewer_id: 3
+  format_id: 1
+  price: 260.0
+  style_id: 2
+  abv: 4.3
+  note: Extremely pale and delicate malt supporting a big hit of fresh stonefruit
+    - peach and nectarine. Very quaffable!
+  location_id: 8
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+beers_004:
+  id: 4
+  name: Midnight Special
+  brewer_id: 4
+  format_id: 1
+  price: 270.0
+  style_id: 94
+  abv: 5.0
+  note: A more interesting stout for a more interesting drinker!
+  location_id: 7
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+beers_005:
+  id: 5
+  name: Armageddon
+  brewer_id: 1
+  format_id: 1
+  price: 400.0
+  style_id: 8
+  abv: 6.7
+  note: It just tastes bigger!
+  location_id: 6
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:22:23.000000000 Z
+beers_006:
+  id: 6
+  name: No. 7
+  brewer_id: 4
+  format_id: 1
+  price: 260.0
+  style_id: 49
+  abv: 5.2
+  note: Yum
+  location_id: 6
+  created_at: 2014-02-14 04:19:48.000000000 Z
+  updated_at: 2014-02-14 05:13:28.000000000 Z

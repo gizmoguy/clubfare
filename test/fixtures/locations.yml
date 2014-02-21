@@ -1,0 +1,61 @@
+---
+locations_001:
+  id: 1
+  name: Ordered from Supplier
+  status: INBOUND
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+locations_002:
+  id: 2
+  name: Ordered from Brewer
+  status: INBOUND
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+locations_003:
+  id: 3
+  name: Ordered from Other Venue
+  status: INBOUND
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+locations_004:
+  id: 4
+  name: Received
+  status: STOCK
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+locations_005:
+  id: 5
+  name: In the Shed
+  status: STOCK
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+locations_006:
+  id: 6
+  name: On Tap
+  status: SERVING
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+locations_007:
+  id: 7
+  name: On Tap - Running Low
+  status: LOW
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+locations_008:
+  id: 8
+  name: In the Chiller
+  status: NEXT
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+locations_009:
+  id: 9
+  name: Sent back empty
+  status: RETURNED
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+locations_010:
+  id: 10
+  name: Collected by Brewer or Other
+  status: RETURNED
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z

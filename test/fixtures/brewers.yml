@@ -1,0 +1,29 @@
+---
+brewers_001:
+  id: 1
+  name: Epic
+  location: Auckland, NZ
+  account: 'Yes'
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+brewers_002:
+  id: 2
+  name: Croucher
+  location: Rotorua, NZ
+  account: 'Yes'
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+brewers_003:
+  id: 3
+  name: Golden Eagle
+  location: Christchurch, NZ
+  account: via BeerNZ
+  created_at: 2014-02-14 04:16:12.000000000 Z
+  updated_at: 2014-02-14 04:16:12.000000000 Z
+brewers_004:
+  id: 4
+  name: Shunters Yard
+  location: Matangi, NZ
+  account: 'Yes'
+  created_at: 2014-02-13 00:50:04.000000000 Z
+  updated_at: 2014-02-13 00:50:04.000000000 Z
