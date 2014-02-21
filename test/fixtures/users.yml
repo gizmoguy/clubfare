@@ -1,9 +1,0 @@
----
-users_001:
-  id: 1
-  name: rcadmin
-  email: greig@hamiltron.net
-  password_digest: "$2a$10$DBHEPgqkDvfHWWLtUBV92u2Z.GtvDBW94B/PS9AG4y4U67aFzZbIu"
-  created_at: 2014-02-14 04:16:13.000000000 Z
-  updated_at: 2014-02-21 22:21:10.000000000 Z
-  remember_token: 2cd31bd089c7a3480b264befdfdf3aed194812d1
