@@ -14,6 +14,13 @@
 	<%= f.association :brewer %>
 	<%= f.association :format %>
 	<%= f.input :price, 		as: :float %>
+	<% if @beer.freight? %>
+		<%= f.input :freight, input_html: { value: @beer.freight }, as: :float %>
+	<% elsif @beer.freight == 0 %>
+		<%= f.input :freight, input_html: { value: 0.0 }, as: :float %>
+	<% else %>
+		<%= f.input :freight, input_html: { value: 20.0 }, as: :float %>
+	<% end %>
 	<%= f.association :style %>
 	<%= f.input :abv, 		as: :float %>
 	<%= f.input :note, 		as: :text %>

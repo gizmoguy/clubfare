@@ -6,16 +6,18 @@ class Beer < ActiveRecord::Base
 	
 	validates :name, length: { maximum: 254 }
 
-	Wastage = 0.05
+	Wastage = 0.00
 
-	TapMarkup = 2.811
-	OffLicenseMarkup = 2
+	Tax = 1.15
 
-	Markups = { tap: 2.811, off: 2 }.tap { |m| m.default = m[:off] }
+	Markups = { tap: 0.40, off: 0.47 }.tap { |m| m.default = m[:off] }
 
 	def pricefor(serving_size, method)
 		available_beer = self.format.size - (self.format.size * Wastage)
-		price = ( (self.price * Markups[method] ) / ( available_beer / serving_size) ).round(1)
+		freight_per_litre = self.freight / available_beer
+		net_cost_per_litre = self.price / available_beer
+		# price = ( (self.price * Markups[method] ) / ( available_beer / serving_size) * Tax ).round(1)
+		price = ( ( net_cost_per_litre / Markups[method] + freight_per_litre ) * serving_size * Tax ).round(1)
 	end
 
 	class <<self

@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140208052322) do
+ActiveRecord::Schema.define(version: 20140223220931) do
 
   create_table "beers", force: true do |t|
     t.string   "name"
     t.integer  "brewer_id"
     t.integer  "format_id"
     t.float    "price"
+    t.float    "freight"
     t.integer  "style_id"
     t.float    "abv"
     t.text     "note"

@@ -11,6 +11,7 @@
       <th>Brewer</th>
       <th>Beer format</th>
       <th>Beer price</th>
+      <th>Freight</th>
       <th>Style</th>
       <th>Beer abv</th>
       <th>Beer note</th>
@@ -27,9 +28,10 @@
         <td><%= beer.name %></td>
         <td><%= beer.brewer.name %></td>
         <td><%= beer.format.name %></td>
-        <td><%= beer.price %></td>
+        <td><%= number_to_currency(beer.price, precision: 2) %></td>
+        <td><%= number_to_currency(beer.freight, precision: 2) %></td>
         <td><%= beer.style.name %></td>
-        <td><%= beer.abv %></td>
+        <td><%= number_to_percentage(beer.abv, precision: 2) %></td>
         <td><%= beer.note %></td>
         <td><%= beer.location.name %></td>
         <td><%= link_to 'Details', beer %></td>
