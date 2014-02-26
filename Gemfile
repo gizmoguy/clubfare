@@ -39,5 +39,11 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # Use simple_form
 gem 'simple_form', '~> 3.0.1'
 
+# Threaded webserver - puma
+gem 'puma'
+
+# Checking for realtime filesystem events
+gem 'rb-inotify'
+
 # Use Capistrano for deployment
 gem 'rvm-capistrano', group: :development

@@ -14,4 +14,7 @@ Clubfare::Application.routes.draw do
 	match '/signin',	to: 'sessions#new',			via: 'get'
 	match '/signout',	to: 'sessions#destroy',		via: 'delete'
 
+	# Allow SSE streaming
+	get 'streaming' => 'beers#update_stream', as: 'streaming'
+
 end

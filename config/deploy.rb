@@ -13,9 +13,6 @@ set :repository,  "https://#{gituser}@github.com/#{gituser}/#{application}.git"
 set :deploy_to,   "/home/#{user}/#{application}"
 set :shared_path, "#{deploy_to}/shared"
 
-# set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-
 role :web, domain                        # Your HTTP server, Apache/etc
 role :app, domain                        # This may be the same as your `Web` server
 role :db,  "#{domain}", :primary => true # This is where Rails migrations will run
@@ -45,6 +42,7 @@ namespace :deploy do
 			run ["cp -a #{shared_path}/config/database.yml #{release_path}/config/database.yml",
 				"cp -a #{shared_path}/db/seeds.rb #{release_path}/db/seeds.rb"
 			].join(" && ")
+			run "mkdir -p #{shared_path}/app/tmp/#{application}"
 		end
 
 	desc "cause Passenger to initiate a restart"

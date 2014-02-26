@@ -6,6 +6,8 @@ class Beer < ActiveRecord::Base
 	
 	validates :name, length: { maximum: 254 }
 
+	after_save :update_file
+
 	Wastage = 0.00
 
 	Tax = 1.15
@@ -26,6 +28,14 @@ class Beer < ActiveRecord::Base
 			self.joins(:location).where(locations: { status: ['LOW','SERVING'] }).includes(:brewer)
 		end
 
+	end
+
+	def update_file
+		path = File.join(Rails.root, 'app', 'tmp', 'clubfare', 'beer_updated')
+		data = "Record Updated"
+		File.open(path, 'w') do |f|
+			f.write(data)
+		end
 	end
 
 end
