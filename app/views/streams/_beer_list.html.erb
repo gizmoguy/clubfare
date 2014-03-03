@@ -1,6 +1,5 @@
-<section id="beer-list" class="cf">
-	<ul>
-		<% @beers.each do |beer| %>
+<ul>
+	<% @beers.each do |beer| %>
 		<li class="full">
 			<article class="cf">
 				<%= content_tag(:b, '', class: beer.location.status.downcase) %>
@@ -23,5 +22,3 @@
 		<% end %>
 	</ul>
 </ul>
-</section>
-

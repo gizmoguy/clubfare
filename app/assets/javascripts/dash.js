@@ -3,7 +3,7 @@ ready = function() {
   setTimeout(function() {
     var source = new EventSource('/streaming');
     source.addEventListener('refresh', function(e) {
-      window.location.reload();
+      $.get('/dash.js');
     });
   }, 1);
 };
