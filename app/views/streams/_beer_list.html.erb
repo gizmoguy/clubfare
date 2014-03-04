@@ -1,23 +1,12 @@
-<ul>
+<ul class="beer-list">
 	<% @beers.each do |beer| %>
-		<li class="full">
-			<article class="cf">
-				<%= content_tag(:b, '', class: beer.location.status.downcase) %>
-				<h2><%= beer.brewer.name %> <i><%= beer.name %></i></h2>
-		  		<p>
-					<%= beer.style.name %><br>
-					<%= beer.brewer.location %> &mdash; ABV <%= number_to_percentage(beer.abv, precision: 1) %>
-		  		</p>
-				<%# <img src="/assets/icons/<%= beer.location.status.downcase %><%#.png" /> %>
-			</article>
-			<div class="price 500ml">
-		  		500ml<br>
-				<%= beer_price(beer, 0.5, :tap) %>
-			</div>
-			<div class="price 250ml">
-		  		250ml
-				<%= beer_price(beer, 0.25, :tap) %>
-			</div> 
-	  	</li>
+		<%= content_tag :li, '', class: beer.location.status.downcase do %>
+			<h2><%= beer.brewer.name %> <em><%= beer.name %></em></h2>
+			<%= beer.style.name %><br />
+			<%= beer.brewer.location %><br />
+			ABV <%= number_to_percentage(beer.abv, precision: 1) %> &mdash;
+			500ml: <%= beer_price(beer, 0.5, :tap) %>
+			250ml: <%= beer_price(beer, 0.25, :tap) %>
+	  	<% end -%>
 	<% end %>
 </ul>

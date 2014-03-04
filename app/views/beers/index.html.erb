@@ -1,12 +1,12 @@
 <% if ! signed_in? %>
 
-<h1>Signin required. Please <%= link_to 'sign in', signin_path %> first.</h1>
+<p>Authorisation required. Please <%= link_to 'sign in', signin_path %> first.</p>
 
 <% else %>
 
-<table>
+<table class="beers-table">
   <thead>
-    <tr>
+    <tr class="beer-list-headers">
       <th>Beer name</th>
       <th>Brewer</th>
       <th>Beer format</th>
@@ -22,9 +22,9 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class="beers-table-body">
     <% @beers.each do |beer| %>
-      <tr>
+	<tr class="<%= cycle('oddbeer','evenbeer') %>">
         <td><%= beer.name %></td>
         <td><%= beer.brewer.name %></td>
         <td><%= beer.format.name %></td>
@@ -32,7 +32,7 @@
         <td><%= number_to_currency(beer.freight, precision: 2) %></td>
         <td><%= beer.style.name %></td>
         <td><%= number_to_percentage(beer.abv, precision: 2) %></td>
-        <td><%= beer.note %></td>
+        <td class="smalltext"><%= beer.note %></td>
         <td><%= beer.location.name %></td>
         <td><%= link_to 'Details', beer %></td>
         <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
