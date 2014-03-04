@@ -1,0 +1,36 @@
+<% if ! signed_in? %>
+
+<p>Authorisation required. Please <%= link_to 'sign in', signin_path %> first.</p>
+
+<% else %>
+
+<table class="brewers-table">
+  <thead>
+    <tr class="brewer-list-headers">
+      <th>Brewer name</th>
+      <th>Brewer location</th>
+      <th>Account?</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody class="brewers-table-body">
+    <% @brewers.each do |brewer| %>
+	<tr class="<%= cycle('odd','even') %>">
+        <td><%= brewer.name %></td>
+        <td><%= brewer.location %></td>
+        <td><%= brewer.account %></td>
+        <td><%= link_to 'Details', brewer %></td>
+        <td><%= link_to 'Edit', edit_brewer_path(brewer) %></td>
+        <td><%= link_to 'Delete', brewer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Brewer', new_brewer_path %>
+<% end %>

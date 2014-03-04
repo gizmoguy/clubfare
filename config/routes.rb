@@ -1,6 +1,8 @@
 Clubfare::Application.routes.draw do
 
 	resources :beers
+	resources :brewers
+	resources :users
 	resources :streams
 	resources :sessions, only: [:new, :create, :destroy]
 

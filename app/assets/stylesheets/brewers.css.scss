@@ -1,0 +1,18 @@
+// Vars
+$font-stack:	Arial, Helvetica, sans-serif;
+$bright-green:	#6BE400;
+$pale-green:	#ABF26D;
+$dark-green:	#40701A;
+$black:			#000000;
+$white:			#FFFFFF;
+
+table.brewers-table {
+	font-family:	$font-stack;
+	font-size:		small;
+	background:		$white;
+	color:			$dark-green;
+	
+	tr.evenbrewer {
+		background:	$pale-green;
+	}
+}

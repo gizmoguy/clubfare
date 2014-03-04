@@ -1,0 +1,18 @@
+<%= simple_form_for @brewer do |f| %>
+	<% if @brewer.errors.any? %>
+		<div id="error_explanation">
+			<h2><%= pluralize(@brewer.errors.count, "error") %> prohibited this brewer from being saved:</h2>
+			<ul>
+      		<% @brewer.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<%= f.input :name,		as: :text %>
+	<%= f.input :location,	as: :text %>
+	<%= f.input :account,	collection: 'Yes','No','via BeerNZ','via Hamilton Beer and Wine Company','via Hashigo Zake','via The Beer Cellar', as: :text %>
+	<%= f.submit "Save", class: "btn btn-large btn-primary" %>
+
+<% end %>

@@ -3,9 +3,11 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
-			<%= link_to 'Dashboard', root_path, class: 'navbar-brand' %>
+			<%= link_to 'Dashboard', root_path, class: 'navbar-brand' %> |
 			<% if signed_in? %>
-				<%= link_to 'Admin', beers_path, class: 'navbar-brand' %>
+				<%= link_to 'Manage Beers', beers_path, class: 'navbar-brand' %> |
+				<%= link_to 'Manage Brewers', brewers_path, class: 'navbar-brand' %> |
+				<%= link_to 'Manage Users', users_path, class: 'navbar-brand' %> |
 				<%= link_to 'Sign Out', signout_path, method: "delete", class: 'navbar-brand' %>
 			<% else %>
 				<%= link_to 'Admin', signin_path, class: 'navbar-brand' %>
