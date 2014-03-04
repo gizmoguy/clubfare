@@ -16,5 +16,8 @@ Clubfare::Application.routes.draw do
 
 	# Allow SSE streaming
 	get 'streaming' => 'streams#update_stream', as: 'streaming'
+	
+	# Beer label generation
+	match 'beers/:id/label' => 'beers#label', as: :beers_label, via: 'get'
 
 end

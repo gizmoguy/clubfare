@@ -47,3 +47,6 @@ gem 'rb-inotify'
 
 # Use Capistrano for deployment
 gem 'rvm-capistrano', group: :development
+
+# Phil Murray's gem for dynamic tap badges
+gem 'ruakura-tapbadge', git: 'https://github.com/meanphil/ruakura-tapbadge'

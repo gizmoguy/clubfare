@@ -1,5 +1,5 @@
 class BeersController < ApplicationController
-	before_filter :get_beer, only: [:show, :edit, :update, :destroy]
+	before_filter :get_beer, only: [:show, :edit, :update, :destroy, :label]
 
 	def index
 		@beers = Beer.all
@@ -46,6 +46,14 @@ class BeersController < ApplicationController
 			format.html { render :html }
 			format.json { head :no_content }
 		end
+	end
+
+	def label
+		Ruakura::Tapbadge.font_file = 'vendor/assets/fonts/familiar_pro.ttf'
+		full = @beer.pricefor(0.5, :tap)
+		half = @beer.pricefor(0.25, :tap)
+		name = @beer.brewer.name + ' ' + @beer.name
+		send_data Ruakura::Tapbadge.badge_for(name: name, style: @beer.style.name, abv: @beer.abv, full: full, half: half), :filename => 'TapBadge.pdf', :type => 'application/pdf', :disposition => 'inline'
 	end
 
 private

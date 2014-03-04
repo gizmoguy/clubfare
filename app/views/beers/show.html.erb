@@ -50,5 +50,6 @@
   <p><strong>3000ml : <%= beer_price(@beer, 3.000, :off) %></strong></p>
 </p>
 
+<%= link_to 'Labels', beers_label_path(@beer) %> | 
 <%= link_to 'Edit', edit_beer_path(@beer) %> |
 <%= link_to 'Back', beers_path %>
