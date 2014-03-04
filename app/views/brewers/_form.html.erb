@@ -12,7 +12,7 @@
 
 	<%= f.input :name,		as: :text %>
 	<%= f.input :location,	as: :text %>
-	<%= f.input :account,	collection: 'Yes','No','via BeerNZ','via Hamilton Beer and Wine Company','via Hashigo Zake','via The Beer Cellar', as: :text %>
+	<%= f.input :account,	collection: ['Yes','No','via BeerNZ','via Hamilton Beer and Wine Company','via Hashigo Zake','via The Beer Cellar'], as: :select %>
 	<%= f.submit "Save", class: "btn btn-large btn-primary" %>
 
 <% end %>
