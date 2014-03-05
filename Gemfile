@@ -48,5 +48,8 @@ gem 'rb-inotify'
 # Use Capistrano for deployment
 gem 'rvm-capistrano', group: :development
 
+# Pagination
+gem 'will_paginate', '~> 3.0'
+
 # Phil Murray's gem for dynamic tap badges
 gem 'ruakura-tapbadge', git: 'https://github.com/meanphil/ruakura-tapbadge'

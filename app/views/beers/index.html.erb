@@ -4,6 +4,13 @@
 
 <% else %>
 
+	<%= form_tag beers_path, :method => 'get' do %>
+	<p>
+		<%= text_field_tag :search, params[:search] %>
+		<%= submit_tag "Search", :name => nil %>
+	</p>
+	<% end %>
+
 <table class="beers-table">
   <thead>
     <tr class="beer-list-headers">
@@ -43,6 +50,6 @@
 </table>
 
 <br>
-
-<%= link_to 'New Beer', new_beer_path %>
+	<%= will_paginate @beers %>
+	<%= link_to 'New Beer', new_beer_path %>
 <% end %>

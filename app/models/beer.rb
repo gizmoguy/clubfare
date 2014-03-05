@@ -28,6 +28,12 @@ class Beer < ActiveRecord::Base
 			self.joins(:location).where(locations: { status: ['LOW','SERVING'] }).includes(:brewer)
 		end
 
+		def search(search, page)
+			paginate :per_page => 15, :page => page,
+				:conditions => ['name LIKE ?', "%#{search}%"],
+				:order => 'location_id'
+		end
+
 	end
 
 	def update_file

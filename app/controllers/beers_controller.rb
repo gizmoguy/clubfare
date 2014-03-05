@@ -2,7 +2,7 @@ class BeersController < ApplicationController
 	before_filter :get_beer, only: [:show, :edit, :update, :destroy, :label]
 
 	def index
-		@beers = Beer.all
+		@beers = Beer.search(params[:search],params[:page])
 	end
 
 	def show
