@@ -26,6 +26,9 @@ ready = function() {
 				// this can't happen
 				break;
 		}
+		setInterval(function() {
+			$('#event_source_status').html(source.readyState);
+		}, 1000);
   	}, 1000);
 };
 
