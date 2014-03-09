@@ -18,6 +18,7 @@ ready = function() {
 				case EventSource.CLOSED:
 					// Start a new listener
 					$('#event_source_status').html(source.readyState);
+					source.close();
 					var source = new EventSource('/streaming');
 					source.addEventListener('refresh', function(e) {
 						$.get('/dash.js');
