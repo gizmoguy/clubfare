@@ -57,8 +57,13 @@ namespace :deploy do
 		end
 
 	desc "cause Passenger to initiate a restart"
-		task :restart do
+		task :restartpassenger do
 			run "touch #{current_path}/tmp/restart.txt"
+		end
+
+	desc "cause Puma to initiate a restart"
+		task :restart do
+			run "/home/ruakura/puma.sh"
 		end
 
 	desc "reload the database with seed data"
