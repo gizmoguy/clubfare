@@ -6,12 +6,11 @@ ready = function() {
 			$.get('/dash.js');
     	});
 		source.onerror = function() {
-			console.log('Error!');
-			console.log(arguments);
+			source.close();
+			source.addEventListener('refresh', function(e) {
+				 $.get('/dash.js');
+			});
 		};
-		setInterval(function() {
-			$('#event_source_status').html(source.readyState);
-		}, 1000);
   	}, 1);
 };
 
