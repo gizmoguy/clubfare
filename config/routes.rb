@@ -22,4 +22,7 @@ Clubfare::Application.routes.draw do
 	# Beer label generation
 	match 'beers/:id/label' => 'beers#label', as: :beers_label, via: 'get'
 
+	# Beer attribute updating
+#	match 'beers/:id/update' => 'beers#update', as: :update_beers, via: 'patch'
+
 end

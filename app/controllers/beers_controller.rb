@@ -29,6 +29,7 @@ class BeersController < ApplicationController
 	end
 
 	def update
+		Rails.logger.debug params.inspect
 		respond_to do |format|
 			if @beer.update(beer_params)
 				format.html { redirect_to beers_path, notice: 'Beer was successfully updated.' }
@@ -63,7 +64,7 @@ private
 	end
 
 	def beer_params
-		params.require(:beer).permit(:name, :brewer_id, :format_id, :price, :freight, :style_id, :abv, :note, :location_id)
+		params.fetch(:beer, {}).permit(:name, :brewer_id, :format_id, :price, :freight, :style_id, :abv, :note, :location_id)
 	end
 
 end
