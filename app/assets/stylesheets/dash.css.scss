@@ -47,5 +47,12 @@ $white:			#FFFFFF;
 		}
 		
 		font-size: 12px;
+
+		/* Try to work around spliiting inside an element in columnar mode */
+		-webkit-column-break-inside: avoid;
+		-moz-column-break-inside: avoid;
+		-o-column-break-inside: avoid;
+		break-inside: avoid-column;
+		page-break-inside: avoid;
 	}
 }
