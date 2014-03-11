@@ -22,4 +22,7 @@ Clubfare::Application.routes.draw do
 	# Beer label generation
 	match 'beers/:id/label' => 'beers#label', as: :beers_label, via: 'get'
 
+	# Beer tasting notes
+	match '/menu',		to: 'beers#menu',			via: 'get'
+	
 end

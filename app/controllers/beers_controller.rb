@@ -29,7 +29,6 @@ class BeersController < ApplicationController
 	end
 
 	def update
-		Rails.logger.debug params.inspect
 		respond_to do |format|
 			if @beer.update(beer_params)
 				format.html { redirect_to beers_path, notice: 'Beer was successfully updated.' }
@@ -55,6 +54,10 @@ class BeersController < ApplicationController
 		half = @beer.pricefor(0.25, :tap)
 		name = @beer.brewer.name + ' ' + @beer.name
 		send_data Ruakura::Tapbadge.badge_for(name: name, style: @beer.style.name, abv: @beer.abv, full: full, half: half), :filename => 'TapBadge.pdf', :type => 'application/pdf', :disposition => 'inline'
+	end
+
+	def menu
+		@beers = Beer.menu
 	end
 
 private

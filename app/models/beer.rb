@@ -32,6 +32,10 @@ class Beer < ActiveRecord::Base
 			order('location_id').where('name LIKE ?', "%#{search}%").paginate(page: page, per_page: 10)
 		end
 
+		def menu
+			self.joins(:location).where(locations: { status: ['INBOUND','STOCK','SERVING','NEXT'] }).includes(:brewer)
+		end
+
 	end
 
 	def update_file

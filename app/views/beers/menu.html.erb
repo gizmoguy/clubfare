@@ -1,0 +1,11 @@
+<section id="beer-menu" class="cf">
+<ul class="beer-menu">
+	<% @beers.menu.each do |beer| %>
+		<div class="menu-brewer-beer-name"><%= beer.brewer.name %> &mdash; <%= beer.name %></div>
+		<div class="menu-beer-style"><%= beer.style.name %></div>
+		<div class="menu-brewer-location"><%= beer.brewer.location %></div>
+		<div class="menu-beer-abv">ABV <%= number_to_percentage(beer.abv, precision: 1) %></div>
+		<p class="menu-beer-note"><%= beer.note %></p>
+	<% end %>
+</ul>
+</section>

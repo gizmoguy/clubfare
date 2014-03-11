@@ -51,5 +51,8 @@ gem 'rvm-capistrano', group: :development
 # Pagination
 gem 'will_paginate', '~> 3.0'
 
+# Prawnto - PDF generation templater
+gem 'prawnto', '~> 0.1'
+
 # Phil Murray's gem for dynamic tap badges
 gem 'ruakura-tapbadge', git: 'https://github.com/meanphil/ruakura-tapbadge'

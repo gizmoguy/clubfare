@@ -1,0 +1,35 @@
+// Vars
+$font-stack:	Arial, Helvetica, sans-serif;
+$bright-green:	#6BE400;
+$pale-green:	#ABF26D;
+$dark-green:	#40701A;
+$black:			#000000;
+$white:			#FFFFFF;
+
+.beer-menu {
+	font-family: $font-stack;
+}
+
+.menu-brewer-beer-name {
+	color: $dark-green;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-size: 200%;
+	padding: 1em;
+}
+
+.menu-beer-style {
+	font-size: 110%;
+}
+
+.menu-brewer-location {
+	font-size: 110%;
+}
+
+.menu-beer-abv {
+	font-size: 120%;
+}
+
+.menu-beer-note {
+	font-size: 130%;
+}
