@@ -25,7 +25,7 @@
 
 	<tbody class="brewers-table-body">
 	<% @brewers.each do |brewer| %>
-	<tr class="<%= cycle('odd','even') %>">
+	<tr class="<%= cycle('oddbrewer','evenbrewer') %>">
 		<td><%= brewer.name %></td>
 		<td><%= brewer.location %></td>
 		<td><%= brewer.account %></td>
