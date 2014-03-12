@@ -50,8 +50,8 @@ class BeersController < ApplicationController
 
 	def label
 		Ruakura::Tapbadge.font_file = 'vendor/assets/fonts/familiar_pro.ttf'
-		full = @beer.pricefor(0.5, :tap)
-		half = @beer.pricefor(0.25, :tap)
+		full = @beer.pricefor(500, :handle)
+		half = @beer.pricefor(285, :half)
 		name = @beer.brewer.name + ' ' + @beer.name
 		send_data Ruakura::Tapbadge.badge_for(name: name, style: @beer.style.name, abv: @beer.abv, full: full, half: half), :filename => 'TapBadge.pdf', :type => 'application/pdf', :disposition => 'inline'
 	end
