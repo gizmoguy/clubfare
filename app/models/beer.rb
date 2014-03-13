@@ -133,6 +133,10 @@ class Beer < ActiveRecord::Base
 			self.joins(:location).where(locations: { status: ['INBOUND','STOCK','SERVING','NEXT'] }).includes(:brewer)
 		end
 
+		def empties
+			self.joins(:location).where(locations: { status: ['EMPTY','RETURNING'] }).includes(:brewer)
+		end
+
 	end
 
 	def update_file

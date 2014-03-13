@@ -60,6 +60,10 @@ class BeersController < ApplicationController
 		@beers = Beer.menu
 	end
 
+	def empties
+		@beers = Beer.empties
+	end
+
 private
 	
 	def get_beer

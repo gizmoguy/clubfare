@@ -25,4 +25,7 @@ Clubfare::Application.routes.draw do
 	# Beer tasting notes
 	match '/menu',		to: 'beers#menu',			via: 'get'
 	
+	# Empty kegs for return
+	match '/empties',		to: 'beers#empties',	via: 'get'
+	
 end

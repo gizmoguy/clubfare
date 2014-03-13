@@ -1,0 +1,15 @@
+<% if ! signed_in? %>
+
+<p>Authorisation required. Please <%= link_to 'sign in', signin_path %> first.</p>
+
+<% else %>
+
+<section id="beer-empties" class="cf">
+<ul class="beer-menu">
+	<% @beers.empties.each do |beer| %>
+		<div class="empties-brewer-beer-name"><%= beer.brewer.name %> &mdash; <%= beer.name %></div>
+	<% end %>
+</ul>
+</section>
+
+<% end %>
