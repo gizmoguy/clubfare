@@ -11,20 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140223220931) do
+ActiveRecord::Schema.define(version: 20140312192133) do
 
   create_table "beers", force: true do |t|
     t.string   "name"
     t.integer  "brewer_id"
     t.integer  "format_id"
     t.float    "price"
-    t.float    "freight"
     t.integer  "style_id"
     t.float    "abv"
     t.text     "note"
     t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "freight"
+    t.boolean  "handpull"
   end
 
   create_table "brewers", force: true do |t|
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 20140223220931) do
     t.integer  "size"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "handpull"
   end
 
   create_table "locations", force: true do |t|

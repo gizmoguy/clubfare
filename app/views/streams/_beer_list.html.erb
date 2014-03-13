@@ -1,6 +1,13 @@
 <ul class="beer-list">
 	<% @beers.each do |beer| %>
 		<%= content_tag :li, '', class: beer.location.status.downcase do %>
+			<% if beer.format.handpull %>
+				<% if beer.handpull %>
+					<%= image_tag('icons/handpull_on.png', class: "dash-handpull") %>
+				<% else %>
+					<%= image_tag('icons/handpull_off.png', class: "dash-handpull") %>
+				<% end %>
+			<% end %>
 			<h2><%= beer.brewer.name %> <em><%= beer.name %></em></h2>
 			<%= beer.style.name %><br />
 			<%= beer.brewer.location %><br />
@@ -8,5 +15,10 @@
 			500ml: <%= beer_price(beer, 500, :handle) %>
 			285ml: <%= beer_price(beer, 285, :half) %>
 	  	<% end %>
+	<% end %>
+</ul>
+<ul class="layout-list">
+	<% @beers.each do |beer| %>
+		<li class="layout-li"></li>
 	<% end %>
 </ul>

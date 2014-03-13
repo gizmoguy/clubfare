@@ -16,19 +16,21 @@
     <tr class="beer-list-headers">
       <th>Beer name</th>
       <th>Brewer</th>
-      <th>Beer format</th>
-      <th>Beer price</th>
-      <th>Freight</th>
-      <th>Style</th>
-      <th>Beer abv</th>
-      <th>Beer note</th>
+      <th class="no-mobile">Beer format</th>
+      <th class="no-mobile">Beer price</th>
+      <th class="no-mobile">Freight</th>
+      <th class="no-mobile">Style</th>
+      <th class="no-mobile">Beer abv</th>
+      <th class="no-mobile">Beer note</th>
       <th>Location</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th id="details-header"></th>
+      <th id="edit-header" class="no-mobile"></th>
+      <th id="delete-header" class="no-mobile"></th>
+      <th id="serving-header"></th>
+      <th id="low-header"></th>
+      <th id="next-header"></th>
+      <th id="empty-header"></th>
+      <th id="handpump-header"></th>
     </tr>
   </thead>
 
@@ -37,20 +39,29 @@
 	<tr class="<%= cycle('oddbeer','evenbeer') %>">
         <td><%= beer.name %></td>
         <td><%= beer.brewer.name %></td>
-        <td><%= beer.format.name %></td>
-        <td><%= number_to_currency(beer.price, precision: 2) %></td>
-        <td><%= number_to_currency(beer.freight, precision: 2) %></td>
-        <td><%= beer.style.name %></td>
-        <td><%= number_to_percentage(beer.abv, precision: 2) %></td>
-        <td class="smalltext"><%= beer.note %></td>
+        <td class="no-mobile"><%= beer.format.name %></td>
+        <td class="no-mobile"><%= number_to_currency(beer.price, precision: 2) %></td>
+        <td class="no-mobile"><%= number_to_currency(beer.freight, precision: 2) %></td>
+        <td class="no-mobile"><%= beer.style.name %></td>
+        <td class="no-mobile"><%= number_to_percentage(beer.abv, precision: 2) %></td>
+        <td class="no-mobile"><%= beer.note %></td>
         <td><%= beer.location.name %></td>
         <td><%= link_to 'Details', beer %></td>
-        <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
-        <td><%= link_to 'Delete', beer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="no-mobile"><%= link_to 'Edit', edit_beer_path(beer) %></td>
+        <td class="no-mobile"><%= link_to 'Delete', beer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <td><%= link_to image_tag('icons/serving-small.png'), beer_path(beer, beer: { location_id: 6 }), :method => :patch %></td>
         <td><%= link_to image_tag('icons/low-small.png'), beer_path(beer, beer: { location_id: 7 }), :method => :patch %></td>
         <td><%= link_to image_tag('icons/next-small.png'), beer_path(beer, beer: { location_id: 8 }), :method => :patch %></td>
         <td><%= link_to image_tag('icons/empty-small.png'), beer_path(beer, beer: { location_id: 9 }), :method => :patch %></td>
+		<% if beer.format.handpull %>
+			<% if beer.handpull %>
+        		<td><%= link_to image_tag('icons/handpull_off-small.png'), beer_path(beer, beer: { handpull: false }), :method => :patch %></td>
+			<% else %>
+        		<td><%= link_to image_tag('icons/handpull_on-small.png'), beer_path(beer, beer: { handpull: true }), :method => :patch %></td>
+			<% end %>	
+		<% else %>
+			<td></td>
+		<% end %>
       </tr>
     <% end %>
   </tbody>

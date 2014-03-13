@@ -6,6 +6,20 @@ $dark-green:	#40701A;
 $black:			#000000;
 $white:			#FFFFFF;
 
+/* Clearfix hack begins */
+
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+/* Clearfix hack ends   */
+
 #beer-list {
 	font-family:	$font-stack;
 	background:		$white;
@@ -17,13 +31,38 @@ $white:			#FFFFFF;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	column-count: 2;
-	-moz-column-count:2; /* Firefox */
-	-webkit-column-count:2; /* Safari and Chrome */
-	column-width: 50%;
-	-moz-column-width: 50%; /* Firefox */
-	-webkit-column-width: 50%; /* Safari and Chrome */
+	@media (min-width: 900px) {
+		column-count: 3;
+		-moz-column-count:3;
+		-webkit-column-count:3;
+		column-width: 33%;
+		-moz-column-width: 33%;
+		-webkit-column-width: 33%;
+	}
+	@media (max-width: 800px) {
+		column-count: 2;
+		-moz-column-count:2;
+		-webkit-column-count:2;
+		column-width: 50%;
+		-moz-column-width: 50%;
+		-webkit-column-width: 50%;
+	}
+	@media (max-width: 600px) {
+		column-count: 1;
+		-moz-column-count:1;
+		-webkit-column-count:1;
+		column-width: 100%;
+		-moz-column-width: 100%;
+		-webkit-column-width: 100%;
+	}
 	
+	float: left;
+	width: 100%;
+	
+	img.dash-handpull {
+		float: right;
+	}
+
 	li {
 		/* Reset everything to 0 for now */
 		list-style: none;
@@ -31,7 +70,10 @@ $white:			#FFFFFF;
 		padding: 10px 0px 10px 80px;
 
 		background-repeat: no-repeat;
-		background-image: url('icons/serving.png');		
+		
+		&.serving {
+			background-image: url('icons/serving.png');		
+		}
 		
 		&.low {
 			background-image: url('icons/low.png');		
@@ -55,4 +97,9 @@ $white:			#FFFFFF;
 		break-inside: avoid-column;
 		page-break-inside: avoid;
 	}
+}
+
+ul.list-layout {
+	float: right;
+	width: 0%;
 }

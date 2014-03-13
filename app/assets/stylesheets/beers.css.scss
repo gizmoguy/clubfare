@@ -6,27 +6,6 @@ $dark-green:	#40701A;
 $black:			#000000;
 $white:			#FFFFFF;
 
-nav {
-	text-align:		center;
-	border-top:		1px solid $dark-green;
-	border-bottom:	1px solid $dark-green;
-	padding:		10px;
-	text-transform:	uppercase;
-	font-family:	$font-stack;
-	background:		$bright-green;
-	color:			$dark-green;
-	
-	a:link, a:visited {
-		text-decoration:	none;
-		color:				$dark-green;
-	}
-
-	a:hover, a:active {
-		text-decoration:	underline;
-		color:				$white;
-	}
-}
-
 table.beers-table {
 	font-family:	$font-stack;
 	font-size:		small;
@@ -35,5 +14,18 @@ table.beers-table {
 	
 	tr.evenbeer {
 		background:	$pale-green;
+	}
+
+	@media(max-width: 600px) {
+		th.no-mobile {
+			display: none;
+		}
+		td.no-mobile {
+			display: none;
+			white-space: no-wrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			-o-text-overflow: ellipsis;
+		}
 	}
 }

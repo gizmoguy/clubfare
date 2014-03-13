@@ -67,7 +67,7 @@ private
 	end
 
 	def beer_params
-		params.fetch(:beer, {}).permit(:name, :brewer_id, :format_id, :price, :freight, :style_id, :abv, :note, :location_id)
+		params.fetch(:beer, {}).permit(:name, :brewer_id, :format_id, :price, :freight, :style_id, :abv, :note, :location_id, :handpull)
 	end
 
 end

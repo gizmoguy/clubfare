@@ -122,7 +122,7 @@ class Beer < ActiveRecord::Base
 	class <<self
 		
 		def ontap
-			self.joins(:location).where(locations: { status: ['LOW','SERVING'] }).includes(:brewer)
+			self.joins(:location).where(locations: { status: ['LOW','SERVING'] }).includes(:brewer, :format)
 		end
 
 		def search(search, page)
