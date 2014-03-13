@@ -9,11 +9,13 @@
 				<% end %>
 			<% end %>
 			<h2><%= beer.brewer.name %> <em><%= beer.name %></em></h2>
-			<%= beer.style.name %><br />
+			<%= beer.style.name %> &mdash;
+			<b><%= number_to_percentage(beer.abv, precision: 1) %> ABV</b><br />
 			<%= beer.brewer.location %><br />
-			ABV <%= number_to_percentage(beer.abv, precision: 1) %> &mdash;
-			500ml: <%= beer_price(beer, 500, :handle) %>
-			285ml: <%= beer_price(beer, 285, :half) %>
+			Handle: <%= beer_price(beer, 500, :handle) %>
+			Benny: <%= beer_price(beer, 465, :benny) %>
+			Glass: <%= beer_price(beer, 300, :glass) %>
+			Half: <%= beer_price(beer, 285, :half) %>
 	  	<% end %>
 	<% end %>
 </ul>
