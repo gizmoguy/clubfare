@@ -1,5 +1,6 @@
+<% @beers.in_groups(2, false) do |group| %>
 <ul class="beer-list">
-	<% @beers.each do |beer| %>
+	<% group.each do |beer| %>
 		<%= content_tag :li, '', class: beer.location.status.downcase do %>
 			<% if beer.format.handpull %>
 				<% if beer.handpull %>
@@ -19,8 +20,4 @@
 	  	<% end %>
 	<% end %>
 </ul>
-<ul class="layout-list">
-	<% @beers.each do |beer| %>
-		<li class="layout-li"></li>
-	<% end %>
-</ul>
+<% end %>
