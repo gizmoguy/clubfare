@@ -26,7 +26,7 @@ class Beer < ActiveRecord::Base
 # We assume that the lowest cost is a small vessel, hence the much higher markup on lower cost.
 
 	Price_lookup_handle = {
-		50..99   => 10.00,
+		50..99   => 9.70,
 		100..150 => 8.70,
 		200..270 => 7.00,
 		271..290 => 7.50,
@@ -37,7 +37,7 @@ class Beer < ActiveRecord::Base
 	}
 
 	Price_lookup_benny = {
-		50..99   => 9.50,
+		50..99   => 9.00,
 		100..150 => 8.00,
 		200..270 => 6.50,
 		271..290 => 7.00,
@@ -48,7 +48,7 @@ class Beer < ActiveRecord::Base
 	}
 
 	Price_lookup_glass = {
-		50..99   => 7.50,
+		50..99   => 5.80,
 		100..150 => 5.20,
 		200..270 => 4.20,
 		271..290 => 4.50,
@@ -59,7 +59,7 @@ class Beer < ActiveRecord::Base
 	}
 
 	Price_lookup_half = {
-		50..99   => 6.00,
+		50..99   => 5.50,
 		100..150 => 5.00,
 		200..270 => 4.00,
 		271..290 => 4.20,
