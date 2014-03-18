@@ -11,7 +11,7 @@
 	<% end %>
 
 	<%= f.input :name,		as: :text %>
-	<%= f.association :brewer %>
+	<%= f.association :brewer, collection: Brewer.order("name") %>
 	<%= f.association :format %>
 	<%= f.input :price, 		as: :float %>
 	<% if @beer.freight? %>
