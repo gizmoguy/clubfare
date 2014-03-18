@@ -49,10 +49,42 @@
         <td><%= link_to 'Details', beer %></td>
         <td class="no-mobile"><%= link_to 'Edit', edit_beer_path(beer) %></td>
         <td class="no-mobile"><%= link_to 'Delete', beer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to image_tag('icons/serving-small.png'), beer_path(beer, beer: { location_id: 6 }), :method => :patch %></td>
-        <td><%= link_to image_tag('icons/low-small.png'), beer_path(beer, beer: { location_id: 7 }), :method => :patch %></td>
-        <td><%= link_to image_tag('icons/next-small.png'), beer_path(beer, beer: { location_id: 8 }), :method => :patch %></td>
-        <td><%= link_to image_tag('icons/empty-small.png'), beer_path(beer, beer: { location_id: 9 }), :method => :patch %></td>
+        <td>
+		<% if beer.location_id == 6 %>
+			<%= link_to image_tag('icons/serving-small.png', :class => "glow"), beer_path(beer, beer: { location_id: 6 }), :method => :patch %>
+		<% else %>
+			<%= link_to image_tag('icons/serving-small.png'), beer_path(beer, beer: { location_id: 6 }), :method => :patch %>
+		<% end %>
+		</td>
+        <td>
+		<% if beer.location_id == 7 %>
+			<%= link_to image_tag('icons/low-small.png', :class => "glow"), beer_path(beer, beer: { location_id: 7 }), :method => :patch %>
+		<% else %>
+			<%= link_to image_tag('icons/low-small.png'), beer_path(beer, beer: { location_id: 7 }), :method => :patch %>
+		<% end %>
+		</td>
+        <td>
+		<% if beer.location_id == 8 %>
+			<%= link_to image_tag('icons/next-small.png', :class => "glow"), beer_path(beer, beer: { location_id: 8 }), :method => :patch %>
+		<% else %>
+			<%= link_to image_tag('icons/next-small.png'), beer_path(beer, beer: { location_id: 8 }), :method => :patch %>
+		<% end %>
+		</td>
+        <td>
+		<% if beer.location_id == 9 %>
+			<% if beer.format_id == 5 %>
+				<%= link_to image_tag('icons/empty-small.png', :class => "glow"), beer_path(beer, beer: { location_id: 11 }), :method => :patch %>
+			<% else %>
+				<%= link_to image_tag('icons/empty-small.png', :class => "glow"), beer_path(beer, beer: { location_id: 9 }), :method => :patch %>
+			<% end %>
+		<% else %>
+			<% if beer.format_id == 5 %>
+				<%= link_to image_tag('icons/empty-small.png'), beer_path(beer, beer: { location_id: 11 }), :method => :patch %>
+			<% else %>
+				<%= link_to image_tag('icons/empty-small.png'), beer_path(beer, beer: { location_id: 9 }), :method => :patch %>
+			<% end %>
+		<% end %>
+		</td>
 		<% if beer.format.handpull %>
 			<% if beer.handpull %>
         		<td><%= link_to image_tag('icons/handpull_off-small.png'), beer_path(beer, beer: { handpull: false }), :method => :patch %></td>

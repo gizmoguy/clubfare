@@ -16,6 +16,10 @@ table.beers-table {
 		background:	$pale-green;
 	}
 
+	img.glow {
+		background-color: $dark-green;
+	}
+
 	@media(max-width: 600px) {
 		th.no-mobile {
 			display: none;
