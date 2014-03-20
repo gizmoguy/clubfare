@@ -4,7 +4,14 @@ class Beer < ActiveRecord::Base
 	belongs_to :location
 	belongs_to :format
 	
-	validates :name, length: { maximum: 254 }
+	validates :name, length: { maximum: 100 }, presence: true, uniqueness: true
+	validates :brewer_id, presence: true
+	validates :format_id, presence: true
+	validates :style_id, presence: true
+	validates :location_id, presence: true
+	validates :price, presence: true, numericality: true
+	validates :abv, presence: true, numericality: true
+	validates :freight, presence: true, numericality: true
 
 	after_save :update_file
 
