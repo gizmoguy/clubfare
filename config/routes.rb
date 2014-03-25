@@ -23,7 +23,8 @@ Clubfare::Application.routes.draw do
 	match 'beers/:id/label' => 'beers#label', as: :beers_label, via: 'get'
 
 	# Beer tasting notes
-	match '/menu',		to: 'beers#menu',			via: 'get'
+	match '/menu',			to: 'beers#menu',				via: 'get'
+	match '/menushort',		to: 'beers#menushort',			via: 'get'
 	
 	# Empty kegs for return
 	match '/empties',		to: 'beers#empties',	via: 'get'

@@ -62,6 +62,10 @@ class BeersController < ApplicationController
 		@beers = Beer.menu
 	end
 
+	def menushort
+		@beers = Beer.ontap
+	end
+
 	def empties
 		@beers = Beer.empties
 	end

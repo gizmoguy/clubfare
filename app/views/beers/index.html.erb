@@ -103,5 +103,6 @@
 	<%= will_paginate @beers %>
 	<%= link_to 'New Beer', new_beer_path %>
 	<%= link_to 'Tasting Notes', menu_path(format: 'pdf') %>
+	<%= link_to 'On tap - for newsletter', menushort_path(format: 'pdf') %>
 	<%= link_to 'Empty Kegs for Return', empties_path %>
 <% end %>
