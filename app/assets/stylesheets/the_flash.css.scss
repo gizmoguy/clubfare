@@ -1,0 +1,20 @@
+.alert-danger {
+	-webkit-transition: background-color 5s ease-out 1ms;
+	-moz-transition: background-color 5s ease-out 1ms;
+	-o-transition: background-color 5s ease-out 1ms;
+	transition: background-color 5s ease-out 1ms;
+	background: red;
+}
+
+.alert-success {
+	-webkit-transition: background-color 5s ease-out 1ms;
+	-moz-transition: background-color 5s ease-out 1ms;
+	-o-transition: background-color 5s ease-out 1ms;
+	transition: background-color 5s ease-out 1ms;
+	background: green;
+}
+
+.alert-off {
+	background: white;
+}
+

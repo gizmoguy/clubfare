@@ -34,7 +34,9 @@ class BeersController < ApplicationController
 				format.html { redirect_to beers_path, notice: 'Beer was successfully updated.' }
 				format.json { render action: 'show', status: :created, location: @beer }
 			else
-				format.html { render action: 'show' }
+				format.html { redirect_to @beer, alert: 'Parameters missing or incorrect. Beer not updated.' }
+#							  redirect_to @beer
+#							}
 				format.json { render json: @beer.errors, status: :unprocessable_entity }
 			end
 		end
