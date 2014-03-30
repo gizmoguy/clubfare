@@ -1,6 +1,6 @@
 var source;
 
-var updateDash = function(e) {
+updateDash = function(e) {
 	$.get('/dash.js');
 }
 
