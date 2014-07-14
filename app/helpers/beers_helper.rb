@@ -5,7 +5,7 @@ module BeersHelper
 #		price = ( (beer.price * Beer::Markups[method] ) / ( (beer.format.size - waste) / serving_size) ).round(1)
 		price = number_to_currency(beer.pricefor(serving_size, method), precision: 2)
 		if price == "$0.00"
-			"N/A"
+			"Ask"
 		else
 			price
 		end
