@@ -21,20 +21,19 @@ class Beer < ActiveRecord::Base
 		# defined here so it's in scope for after the each
 		price = 0
 		price_per_litre = ( self.price / self.format.size ) / markup * tax
-		# We do the redundant "/ 10" math just to clarify the value is in L (ie 285ml == 0.285L)
 		case method
 		when :handle # 500ml
-			price = price_per_litre / 0.5 / 10
+			price = price_per_litre * 0.5
 		when :half # 285ml
-			price = price_per_litre / 0.285 / 10
-		when :benny # 400ml
-			price = price_per_litre / 0.400 / 10
+			price = price_per_litre * 0.285
+		when :benny # 465ml
+			price = price_per_litre * 0.465
 		when :glass # 300ml
-			price = price_per_litre / 0.300 / 10
-		when :rigger_small # 1500 ml
-			price = price_per_litre / 1.5 / 10
+			price = price_per_litre * 0.300
+		when :rigger_small # 1125 ml
+			price = price_per_litre * 1.125
 		else # 2000 ml
-			price = price_per_litre / 2 / 10
+			price = price_per_litre * 2
 		end
 		# Warning, if there's no match in the method db table
 		# it'll calculate a cost of $0, a validation is added
