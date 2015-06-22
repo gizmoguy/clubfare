@@ -13,23 +13,26 @@ class StreamsController < ApplicationController
 	end
 
 	def update_stream
-		response.headers['Content-Type'] = 'text/event-stream'
-		sse = Reloader::SSE.new(response.stream)
+		# Comment this out to stop spamming my console
 
-		begin
-			updated = File.join(Rails.root, 'app', 'tmp', 'clubfare')
-			notifier = INotify::Notifier.new
-			
-			notifier.watch(updated, :close_write) do |file|
-				sse.write({ :time => Time.now }, :event => 'refresh')
-			end
-			notifier.run
 
-		rescue IOError
-			logger.info "Stream closed"
-		ensure
-			sse.close
-		end
+		#response.headers['Content-Type'] = 'text/event-stream'
+		#sse = Reloader::SSE.new(response.stream)
+
+		#begin
+		#	updated = File.join(Rails.root, 'app', 'tmp', 'clubfare')
+		#	notifier = INotify::Notifier.new
+		#
+		#	notifier.watch(updated, :close_write) do |file|
+		#		sse.write({ :time => Time.now }, :event => 'refresh')
+		#	end
+		#	notifier.run
+
+		#rescue IOError
+		#	logger.info "Stream closed"
+		#ensure
+		#	sse.close
+		#end
 	end
 
 end

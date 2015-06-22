@@ -8,6 +8,7 @@ var ready = function() {
 
 	$("div#flash").addClass("alert-off");
 	var cl = $("body").prop("class");
+    /*
 	if (cl == "Ruakura Club Beer Status") {
 		source = new EventSource('/streaming');
 		source.addEventListener('refresh', updateDash); 
@@ -37,7 +38,7 @@ var ready = function() {
 					break;
 			}
 		}, 1000);
-	}
+	}*/
 };
 
 $(document).ready(ready);
