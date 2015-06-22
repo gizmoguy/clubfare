@@ -20,6 +20,4 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  SERVING: "Pouring"
-  LOW: "Low"
-  NEXT: "On Soon"
+  hello: "Hello world"
