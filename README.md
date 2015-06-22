@@ -5,30 +5,23 @@ It is specifically designed for the [*Ruakura Club*](http://ruakura-club.co.nz) 
 
 * Ruby version
 
-Ruby is 2.1.0
+Ruby is 2.1.2
 
 * System dependencies
 
-We depend on MySQL
+We depend on Postgres
 
 * Configuration
 
-We expect our MySQL database to be on localhost, and have the following dbs:
+Work that out later
 
-	* clubfare_production
-	* clubfare_development
-	* clubfare_test
-
-Access should be user based, and this user should be set in your database.yml file
-
-* How to run the test suite
-
-TBD
 
 * Deployment instructions
 
-TBD
+User docker because I wanna play with something new :)
 
-Greig McGill
 
-February, 2014
+## Contributors
+
+* Greig McGill - Feb 2014
+* Andrew Kampjes - [@akampjes](https://twitter.com/akampjes)
