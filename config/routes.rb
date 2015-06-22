@@ -6,7 +6,6 @@ Clubfare::Application.routes.draw do
 	resources :brewers
 	resources :users
 	resources :streams
-	resources :sessions, only: [:new, :create, :destroy]
 
 	namespace :api do
 		resources :beers
