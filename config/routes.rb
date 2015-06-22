@@ -1,5 +1,7 @@
 Clubfare::Application.routes.draw do
 
+  devise_for :users
+
 	resources :beers
 	resources :brewers
 	resources :users
@@ -13,8 +15,6 @@ Clubfare::Application.routes.draw do
 	root 'streams#dash'
 
 	match '/dash',		to: 'streams#dash',			via: 'get'
-	match '/signin',	to: 'sessions#new',			via: 'get'
-	match '/signout',	to: 'sessions#destroy',		via: 'delete'
 
 	# Allow SSE streaming
 	get 'streaming' => 'streams#update_stream', as: 'streaming'

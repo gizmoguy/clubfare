@@ -2,6 +2,7 @@ require 'reloader/sse'
 
 class StreamsController < ApplicationController
 	include ActionController::Live
+	skip_before_filter :authenticate_user!
 
 	def dash
 		@beers = Beer.joins(:location).where(locations: { status: ['NEXT','LOW','SERVING'] }).order(:location_id)
