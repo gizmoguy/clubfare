@@ -11,8 +11,6 @@
   <body class="<%= content_for?(:title) ? yield(:title) : "body"%>">
     <header>
       <%= render 'layouts/navigation' %>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
     </header>
     <main role="main">
        <%= render 'layouts/messages' %>
