@@ -56,3 +56,6 @@ gem 'prawnto', '~> 0.1'
 
 # Phil Murray's gem for dynamic tap badges
 gem 'ruakura-tapbadge', git: 'https://github.com/meanphil/ruakura-tapbadge'
+
+# Debug all the things
+gem 'pry', group: :development

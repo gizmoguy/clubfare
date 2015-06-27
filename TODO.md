@@ -5,4 +5,3 @@ TODO
 * Make mobile a thing :)
 * Make docker a thing
 * Deal with configuration somehow
-* Pre-populate the database with beer styles etc.

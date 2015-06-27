@@ -25,3 +25,6 @@ doc/
 .DS_Store
 .idea
 .secret
+
+# Ignore this one weird directory
+databasedump/
