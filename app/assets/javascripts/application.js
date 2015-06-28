@@ -14,3 +14,27 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var ready = function() {
+    if($('.beer-list').length){
+        var etag = null;
+        setInterval(function () {
+            console.log('this is working!');
+            $.ajax('/api/beers', {
+                success: function (data, textStatus, xhr) {
+                    if (etag == null) {
+                        etag = xhr.getResponseHeader('Etag');
+                    }
+
+                    if (xhr.getResponseHeader('ETag') != etag) {
+                        // Page needs refreshing because etag has changed
+                        location.reload();
+                    }
+                }
+            });
+        }, 10000);
+    }
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
