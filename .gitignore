@@ -16,7 +16,6 @@
 /tmp
 
 # Ignore unneeded or insecure files
-database.yml
 seeds.rb
 doc/
 *.swp

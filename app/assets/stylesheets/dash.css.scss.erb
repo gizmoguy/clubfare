@@ -57,15 +57,15 @@ $white:			#FFFFFF;
 		background-repeat: no-repeat;
 		
 		&.serving {
-			background-image: url('icons/serving.png');		
+		  background-image: url(<%= asset_path('icons/serving.png') %>);
 		}
 		
 		&.low {
-			background-image: url('icons/low.png');		
+          background-image: url(<%= asset_path('icons/low.png') %>);
 		}
 		
 		&.next {
-			background-image: url('icons/next.png');		
+          background-image: url(<%= asset_path('icons/next.png') %>);
 		}
 		
 		h2 {

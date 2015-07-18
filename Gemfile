@@ -15,6 +15,9 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+# libv8 is needed by therubyracer
+gem 'libv8'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
@@ -42,11 +45,8 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # Use simple_form
 gem 'simple_form', '~> 3.0.1'
 
-# Checking for realtime filesystem events
-gem 'rb-inotify', :require => false
-
-# Use Capistrano for deployment
-gem 'rvm-capistrano', group: :development
+# Keep our env vars here
+gem 'dotenv-rails', :groups => [:development, :test]
 
 # Pagination
 gem 'will_paginate', '~> 3.0'
