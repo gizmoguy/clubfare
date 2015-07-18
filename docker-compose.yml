@@ -1,8 +1,8 @@
 ## Support Servers/Services
-db:
-  image: postgres:9.3
-  ports:
-    - "5432"
+#db:
+#  image: postgres:9.3
+#  ports:
+#    - "5432"
 
 ## Rails Application Server
 web:
@@ -11,8 +11,8 @@ web:
     - .:/code
   ports:
     - "80:80"
-  env_file:
-    - .env
-    - .env.production
-  links:
-    - db
+#  env_file:
+#    - .env
+#    - .env.production
+#  links:
+#    - db
