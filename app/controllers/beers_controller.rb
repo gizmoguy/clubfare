@@ -3,6 +3,7 @@ class BeersController < ApplicationController
 
 	def index
 		@beers = Beer.search(params[:search],params[:page])
+		fresh_when @beers
 	end
 
 	def show

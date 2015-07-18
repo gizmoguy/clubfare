@@ -10,10 +10,8 @@
 		</div>
 	<% end %>
 
-	<%= f.input :name,		as: :text %>
-	<%= f.input :email,		as: :text %>
-	<%= f.input :password, 	as: :password %>
-	<%= f.input :password_confirmation, 	as: :password %>
+	<%= f.input :name,		as: :string%>
+	<%= f.input :email,		as: :string%>
 	<%= f.submit "Save", class: "btn btn-large btn-primary" %>
 
 <% end %>

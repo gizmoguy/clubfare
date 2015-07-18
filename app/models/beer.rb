@@ -13,8 +13,6 @@ class Beer < ActiveRecord::Base
 	validates :abv, presence: true, numericality: true
 	validates :freight, presence: true, numericality: true
 
-	after_save :update_file
-
 	def pricefor(serving_size, method)
 		markup = 0.4
 		tax = 1.15
@@ -60,13 +58,4 @@ class Beer < ActiveRecord::Base
 		end
 
 	end
-
-	def update_file
-		path = File.join(Rails.root, 'app', 'tmp', 'clubfare', 'beer_updated')
-		data = "Record Updated"
-		File.open(path, 'w') do |f|
-			f.write(data)
-		end
-	end
-
 end

@@ -1,8 +1,5 @@
 TODO
 ====
 
-* Fix styling
-
-* Conform to best practices in general
-
-* Learn some UX principles and apply them
+* Make mobile a thing :)
+* Verify that password resets work in prod
