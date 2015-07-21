@@ -19,7 +19,6 @@ var ready = function() {
     if($('.beer-list').length){
         var etag = null;
         setInterval(function () {
-            console.log('this is working!');
             $.ajax('/api/beers', {
                 success: function (data, textStatus, xhr) {
                     if (etag == null) {
