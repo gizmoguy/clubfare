@@ -3,15 +3,15 @@
 This is an application designed to manage craft beer for a small bar.
 It is specifically designed for the [*Ruakura Club*](http://ruakura-club.co.nz) in Hamilton, New Zealand.
 
-* Ruby version
+## Ruby version
 
 Ruby is 2.1.2
 
-* System dependencies
+## System dependencies
 
 We depend on Postgres
 
-* Development instructions
+## Development instructions
 
 An easy way to deploy a development version of Clubfare is with docker-compose, some quick docs:
 
@@ -26,7 +26,7 @@ RAILS_ENV=development rake db:create
 RAILS_ENV=development rake db:migrate
 ```
 
-* Deployment instructions
+## Deployment instructions
 
 1. Install [Docker](https://www.docker.com/).
 
