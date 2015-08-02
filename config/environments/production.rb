@@ -76,4 +76,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Configure mailer
+  config.action_mailer.default_url_options = { host: 'clubfare.hs.net.nz' }
+  config.action_mailer.smtp_settings = { :address => '172.17.42.1', :port => '25' }
+  ActionMailer::Base.default :from => 'accounts@clubfare.hs.net.nz'
+  ActionMailer::Base.default :reply_to => 'accounts@clubfare.hs.net.nz'
 end
