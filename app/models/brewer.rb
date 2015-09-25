@@ -8,7 +8,7 @@ class Brewer < ActiveRecord::Base
 	class <<self
 
         def search(search, page)
-			order('name').where('name LIKE ?', "%#{search}%").paginate(page: page, per_page: 20)
+			order('name').where('name ILIKE ?', "%#{search}%").paginate(page: page, per_page: 20)
         end
 
     end

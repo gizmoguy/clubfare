@@ -46,7 +46,7 @@ class Beer < ActiveRecord::Base
 		end
 
 		def search(search, page)
-			order('location_id').where('name LIKE ?', "%#{search}%").paginate(page: page, per_page: 10)
+			order('location_id').where('name ILIKE ?', "%#{search}%").paginate(page: page, per_page: 10)
 		end
 
 		def menu
