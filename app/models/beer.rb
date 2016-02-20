@@ -46,7 +46,12 @@ class Beer < ActiveRecord::Base
 		end
 
 		def search(search, page)
-			order('location_id').where('name ILIKE ?', "%#{search}%").paginate(page: page, per_page: 10)
+			if search.to_s.empty?
+				results = order('location_id')
+			else
+				results = joins(:brewer).order('location_id').where('beers.name ILIKE ? or brewers.name ILIKE ?', "%#{search}%", "%#{search}%")
+			end
+			results.paginate(page: page, per_page: 10)
 		end
 
 		def menu
