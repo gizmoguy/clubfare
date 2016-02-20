@@ -4,7 +4,7 @@ class Beer < ActiveRecord::Base
 	belongs_to :location
 	belongs_to :format
 	
-	validates :name, length: { maximum: 100 }, presence: true, uniqueness: true
+	validates :name, length: { maximum: 100 }, presence: true, uniqueness: {:scope => :brewer_id}
 	validates :brewer_id, presence: true
 	validates :format_id, presence: true
 	validates :style_id, presence: true
