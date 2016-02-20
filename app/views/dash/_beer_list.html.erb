@@ -13,10 +13,11 @@
 			<%= beer.style.name %> &mdash;
 			<b><%= number_to_percentage(beer.abv, precision: 1) %> ABV</b><br />
 			<%= beer.brewer.location %><br />
-			Handle: <%= beer_price(beer, 500, :handle) %>
-			Benny: <%= beer_price(beer, 465, :benny) %>
-			Glass: <%= beer_price(beer, 300, :glass) %>
-			Half: <%= beer_price(beer, 285, :half) %>
+			<%# Handle: <%= beer_price(beer, 500, :handle) %>
+			<%# Benny: <%= beer_price(beer, 465, :benny) %>
+			<%# Glass: <%= beer_price(beer, 300, :glass) %>
+			<%# Half: <%= beer_price(beer, 285, :half) %>
+			<p></p>
 	  	<% end %>
 	<% end %>
 </ul>
