@@ -6,6 +6,7 @@ Clubfare::Application.routes.draw do
 	resources :brewers
 	resources :users
 	resources :dash
+	resources :taplist
 
 	namespace :api do
 		resources :beers
@@ -14,6 +15,8 @@ Clubfare::Application.routes.draw do
 	root 'dash#index'
 
 	match '/dash',		to: 'dash#index',			via: 'get'
+
+	match '/taplist',	to: 'taplist#index',		via: 'get'
 
 	# Beer label generation
 	match 'beers/:id/label' => 'beers#label', as: :beers_label, via: 'get'

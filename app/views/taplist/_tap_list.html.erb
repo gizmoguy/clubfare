@@ -1,0 +1,20 @@
+<% @beers.in_groups(2, false) do |group| %>
+<ul class="taplist">
+	<% group.each do |beer| %>
+		<%= content_tag :li, '', class: beer.location.status.downcase do %>
+			<% if beer.format.handpull %>
+				<% if beer.handpull %>
+					<%= image_tag('icons/handpull_on.png', class: "dash-handpull") %>
+				<% else %>
+					<%= image_tag('icons/handpull_off.png', class: "dash-handpull") %>
+				<% end %>
+			<% end %>
+			<h2><%= beer.brewer.name %> <em><%= beer.name %></em></h2>
+			<%= beer.style.name %> &mdash;
+			<b><%= number_to_percentage(beer.abv, precision: 1) %> ABV</b><br />
+            <span class="beer-location"><%= beer.brewer.location %></span><br />
+			<p></p>
+	  	<% end %>
+	<% end %>
+</ul>
+<% end %>
