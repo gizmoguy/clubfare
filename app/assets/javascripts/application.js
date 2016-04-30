@@ -16,7 +16,7 @@
 //= require_tree .
 
 var ready = function() {
-    if($('.beer-list').length){
+    if($('.beer-list').length || $('.taplist').length){
         var etag = null;
         setInterval(function () {
             $.ajax('/api/beers', {
