@@ -21,7 +21,7 @@
 	<% else %>
 		<%= f.input :freight, input_html: { value: 20.0 }, as: :float %>
 	<% end %>
-	<%= f.association :style %>
+	<%= f.association :style, collection: Style.order("name") %>
 	<%= f.input :abv, 		as: :float %>
 	<%= f.input :note, 		as: :text %>
 	<%= f.association :location %>
