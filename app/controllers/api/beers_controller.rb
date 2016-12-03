@@ -8,8 +8,12 @@ class Api::BeersController < ApiController
 	end
 
 	def index
-		@beers = Beer.ontap
-		render json: @beers
+		@beers = Beer.joins(:location).joins(:brewer).joins(:style).where(locations: { status: ['NEXT','LOW','SERVING'] }).order(:location_id)
+		render json: @beers, :include => {
+			:brewer => {:only => [:id, :name, :location]},
+			:location => {:only => [:id, :name, :status]},
+			:style => {:only => [:id, :name]}
+		}, :except => [:brewer_id, :location_id, :style_id, :format_id, :price, :freight]
 	end
 
 end
