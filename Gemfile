@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'tzinfo-data'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
 
@@ -40,7 +42,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt', '~> 3.1.2'
 
 # Use simple_form
 gem 'simple_form', '~> 3.0.1'
