@@ -5,7 +5,7 @@ It is specifically designed for the [*Ruakura Club*](http://ruakura-club.co.nz) 
 
 ## Ruby version
 
-Ruby is 2.1.2
+Ruby is 2.3.8
 
 ## System dependencies
 
